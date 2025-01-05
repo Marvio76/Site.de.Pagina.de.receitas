@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: "Outfit", serif;
+    background-color: hsl(30, 54%, 90%);
+    display: flex;
+    text-align: left;
+    align-items: center;
+    min-height: 100vh;
+}
+.conteiner{
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+}
+.base{
+    padding: 20px;
+}
+img{
+    width: 100%;
+    border-radius: 5px;
+}
+.recife-info h1{
+    font-family: "Young Serif";
+  font-weight: 700;
+  font-style: normal;
+    margin: 20px 0;
+    color:  hsl(24, 5%, 18%);
+}
+.recife-info p{
+    color: hsl(30, 10%, 34%);
+}
+.preparation-time{
+    margin: 20px 0px;
+    width: 100%;
+    background-color:hsl(330, 100%, 98%);
+    padding: 20px 0;
+    border-radius: 10px;
+}
+.preparation-time h2{
+    margin-left: 20px;
+    color: hsl(332, 51%, 32%);
+    font-weight: 600;
+}
+.preparation-time ul{
+    margin-left: 45px;
+    list-style: disc outside; 
+}
+.preparation-time ul li::marker {
+    color: hsl(332, 51%, 32%); /* Define a cor da bolinha */
+    font-size: 0.9em; 
+}
+.preparation-time ul li{
+    color: hsl(30, 10%, 34%) ;
+    margin-top: 15px;
+} 
+.preparation-time ul li strong{
+    margin-left: 18px;
+    color: hsl(24, 5%, 18%);
+}
+
+.ingredients h2{
+    color: hsl(14, 45%, 36%)
+}
+.ingredients ul {
+    margin-left: 20px;
+}
+.ingredients ul li{
+    color: hsl(30, 10%, 34%);
+    margin-top: 15px;
+    padding-left: 18px;
+}
+.ingredients ul li::marker{
+    color: hsl(14, 45%, 36%);
+    font-size: 0.9em;
+}
+.ingredients{
+    padding-bottom: 20px;
+    border-bottom: hsl(30, 18%, 87%) solid 1px;
+}
+.intructions{
+    padding: 20px 0;
+    border-bottom: hsl(30, 18%, 87%) solid 1px;
+}
+.intructions h2{
+    color: hsl(14, 45%, 36%);
+    margin-bottom: 15px;
+}
+.intructions ol{
+    margin-left: 20px;
+}
+.intructions ol li{
+    color: hsl(30, 10%, 34%);
+    margin-top: 10px;
+    padding-left: 18px;
+}
+.intructions ol li::marker{
+    color: hsl(14, 45%, 36%);
+    font-size: 0.9em;
+    font-weight: bold;
+}
+/* nutrion */
+
+.nutrition h2{
+    color: hsl(14, 45%, 36%);
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.nutrition p{
+    color:  hsl(30, 10%, 34%);
+    margin-bottom: 15px;
+}
+.nutrition tr {
+    border-bottom:  hsl(30, 18%, 87%)solid 1px; /* Adiciona a linha abaixo de cada <tr> */
+}
+.nutrition th, .nutrition td {
+    padding: 10px; /* Adiciona espaçamento dentro das células */
+    text-align: left; /* Ajuste do alinhamento do texto */
+}
+.nutrition th{
+    color:hsl(30, 10%, 34%) ;
+    font-weight: 400;
+}
+.nutrition td{
+    color: hsl(14, 45%, 36%);
+    font-weight: 700;
+}
+.nutrition table {
+    border-collapse: collapse; /* Necessário para colapsar as bordas da tabela */
+    width: 100%; /* Ajusta a largura da tabela */
+}
+.nutrition tr:last-child {
+    border-bottom: none; /* Remove a borda da última linha */
+}
+@media(max-width:800px) {
+    .conteiner{
+        max-width: 800px;
+        margin: 0px auto;
+        border-radius: 0px;
+    }
+    .base{
+        padding: 0px;
+    }
+    .mobile{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .nutrition{
+        margin-bottom: 30px;
+    }
+    img{
+        border-radius: 0px ;
+    }
+}
